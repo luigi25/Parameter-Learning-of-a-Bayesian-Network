@@ -1,0 +1,41 @@
+{
+    "V": ["MetastaticCancer", "HighCalciumLevel", "BrainTumour", "Coma", "SevereHeadaches"],
+    "E": {
+        "MetastaticCancer" : ["HighCalciumLevel","BrainTumour"],
+        "HighCalciumLevel" : ["Coma"],
+        "BrainTumour" : ["Coma","SevereHeadaches"],
+        "Coma" : [],
+        "SevereHeadaches" : []
+    },
+    "F": {
+        "MetastaticCancer": {
+            "values": ["No", "Yes"],
+            "parents": [],
+            "cpt": [0.1,0.9]
+        },
+
+        "HighCalciumLevel": {
+            "values": ["No", "Yes"],
+            "parents": ["MetastaticCancer"],
+            "cpt": [0.17,0.83,0.8,0.2]
+        },
+
+        "BrainTumour": {
+            "values": ["No","Yes"],
+            "parents": ["MetastaticCancer"],
+            "cpt": [0.79,0.21,0.95,0.05]
+        },
+
+        "Coma": {
+            "values": ["No","Yes"],
+            "parents": ["HighCalciumLevel","BrainTumour"],
+            "cpt": [0.2,0.8,0.31,0.69,0.22,0.78,0.95,0.05]
+        },
+
+        "SevereHeadaches": {
+            "values": ["No", "Yes"],
+            "parents": ["BrainTumour"],
+            "cpt":  [0.2,0.8,0.4,0.6]
+        }
+    }
+}
