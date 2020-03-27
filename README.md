@@ -15,7 +15,7 @@ Il linguaggio di programmazione scelto per l'elaborato è Python, utilizzato con
 
 Necessaria l'installazione di alcuni packages nell'ambiente di sviluppo:
 
-* 'random': implementa generatori di numeri pseudo-casuali per diverse distribuzioni e, nel progetto, viene utilizzato per la generazione del data set.
+* **random**: implementa generatori di numeri pseudo-casuali per diverse distribuzioni e, nel progetto, viene utilizzato per la generazione del data set.
         
 * itertools: implementa una serie di funzioni per lavorare con data sets iterabili. In questo caso viene utilizzato per la creazione di tutte le possibili configurazioni dei nodi genitori del vertice in questione.
         
