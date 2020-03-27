@@ -17,7 +17,7 @@ def dfs_visit(nodes, index, matrix):
     global time
     time += 1
     nodes[index].color = "Gray"
-    # controlla i nodi adiacenti al nodo con indice nodeIndex
+    # controlla i nodi adiacenti al nodo con indice index
     for i in range(len(nodes)):
         if matrix[index, i] == 1 and nodes[i].color == "White":
             nodes[i].pi = index
