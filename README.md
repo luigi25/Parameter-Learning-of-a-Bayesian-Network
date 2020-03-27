@@ -17,20 +17,20 @@ Necessaria l'installazione di alcuni packages nell'ambiente di sviluppo:
 
 * **random**: implementa generatori di numeri pseudo-casuali per diverse distribuzioni e, nel progetto, viene utilizzato per la generazione del data set.
         
-* itertools: implementa una serie di funzioni per lavorare con data sets iterabili. In questo caso viene utilizzato per la creazione di tutte le possibili configurazioni dei nodi genitori del vertice in questione.
+* **itertools**: implementa una serie di funzioni per lavorare con data sets iterabili. In questo caso viene utilizzato per la creazione di tutte le possibili configurazioni dei nodi genitori del vertice in questione.
         
-* numpy: implementa funzioni scientifiche ideate per compiere operazioni su vettori e matrici dimensionali, difatti viene utilizzato proprio con questo scopo.
+* **numpy**: implementa funzioni scientifiche ideate per compiere operazioni su vettori e matrici dimensionali, difatti viene utilizzato proprio con questo scopo.
         
-* copy: implementa funzioni utilizzate per la copia di oggetti, dunque viene utilizzato per eseguire la copia del vettore dei nodi.
+* **copy**: implementa funzioni utilizzate per la copia di oggetti, dunque viene utilizzato per eseguire la copia del vettore dei nodi.
         
-* matplotlib: implementa funzioni per la creazione di grafici per il linguaggio di programmazione Python, infatti, viene utilizzato per la visualizzazione grafica della learning curve della divergenza di Jensen-Shannon.
+* **matplotlib**: implementa funzioni per la creazione di grafici per il linguaggio di programmazione Python, infatti, viene utilizzato per la visualizzazione grafica della learning curve della divergenza di Jensen-Shannon.
 
 
 ## Code
 
 ### Node.py
         
-* La classe Node costituisce i nodi della rete Bayesiana. Ogni nodo possiede un valore, un vettore dei nodi genitori, un colore, un tempo di scoperta e un tempo di terminazione. Questi campi sono utilizzati per la visita in profondità, al fine di ottenere un ordinamento topologico dei nodi: è indispensabile controllare se un evento, rappresentato da un nodo, si sia verificato o meno in base alle possibili configurazioni dei nodi genitori.
+* La classe `Node` costituisce i nodi della rete Bayesiana. Ogni nodo possiede un valore, un vettore dei nodi genitori, un colore, un tempo di scoperta e un tempo di terminazione. Questi campi sono utilizzati per la visita in profondità, al fine di ottenere un ordinamento topologico dei nodi: è indispensabile controllare se un evento, rappresentato da un nodo, si sia verificato o meno in base alle possibili configurazioni dei nodi genitori.
 
 ### BayesianNetwork.py
 
