@@ -30,7 +30,7 @@ Necessaria l'installazione di alcuni packages nell'ambiente di sviluppo:
 
 ### Node.py
         
-* La classe Node costituisce i nodi della rete Bayesiana. Ogni nodo possiede un valore, un vettore dei nodi genitori, un colore, un tempo di scoperta e un tempo di terminazione. Questi campi sono utilizzati per la visita in profondità, al fine di ottenere un ordinamento topologico dei nodi il quale è indispensabile per verificare se un evento, rappresentato da un nodo, si sia verificato o meno in base alle possibili configurazioni dei nodi genitori.
+* La classe Node costituisce i nodi della rete Bayesiana. Ogni nodo possiede un valore, un vettore dei nodi genitori, un colore, un tempo di scoperta e un tempo di terminazione. Questi campi sono utilizzati per la visita in profondità, al fine di ottenere un ordinamento topologico dei nodi: è indispensabile controllare se un evento, rappresentato da un nodo, si sia verificato o meno in base alle possibili configurazioni dei nodi genitori.
 
 ### BayesianNetwork.py
 
