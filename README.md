@@ -4,9 +4,9 @@ Il programma tratta di un semplice modello di rete Bayesiana inerente al problem
 
 ## Useful links
 
-Link utile per la visione della struttura della rete Bayesiana [**metastatic_cancer**](https://github.com/luigi25/EsameAI/blob/master/Project%20AI/Metastatic%20Cancer/metastic_cancer.bn) memorizzata nel progetto.
+* Link utile per la visione della struttura della rete Bayesiana [**metastatic_cancer**](https://github.com/luigi25/EsameAI/blob/master/Project%20AI/Metastatic%20Cancer/metastic_cancer.bn) memorizzata nel progetto.
 
-Link utile usato per l'apprendimento dei parametri in reti Bayesiane, dove è stato utilizzato l'approccio Bayesiano descritto in [**Heckerman 1997**](http://machinelearning102.pbworks.com/f/Tutorial-BayesianNetworks.pdf).
+* Link utile usato per l'apprendimento dei parametri in reti Bayesiane, dove è stato utilizzato l'approccio Bayesiano descritto in [**Heckerman 1997**](http://machinelearning102.pbworks.com/f/Tutorial-BayesianNetworks.pdf).
 
 
 ## Requirements
