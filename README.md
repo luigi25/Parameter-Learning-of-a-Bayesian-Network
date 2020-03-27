@@ -48,7 +48,7 @@ Necessaria l'installazione di alcuni packages nell'ambiente di sviluppo:
 
 * La funzione `probabilities_dataset` riceve il vettore dei nodi e crea un array contenente, per ogni vertice, il vettore di tutte le probabilità che accada l'evento considerato in base alle possibili configurazioni dei nodi genitori, se presenti.
        
-* La funzione `dataset_gen` prende in ingresso un numero n di elementi del data set, la matrice di adiacenza della rete, il vettore dei nodi di questa e l'array delle probabilità creato dalla funzione `probilities_dataset`. La funzione restituisce un data set di dimensione n, generando un numero casuale tra **0** e **1** e confrontandolo, nodo per nodo in base all'ordinamento topologico, alle probabilità condizionate presenti. Il data set è creato inserendo i valori **0** o **1** in base al risultato del confronto.
+* La funzione `dataset_gen` prende in ingresso un numero n di elementi del data set, la matrice di adiacenza della rete, il vettore dei nodi di questa e l'array delle probabilità creato dalla funzione `probilities_dataset`. La funzione restituisce un data set di dimensione **n**, generando un numero casuale tra **0** e **1** e confrontandolo, nodo per nodo in base all'ordinamento topologico, alle probabilità condizionate presenti. Il data set è creato inserendo i valori **0** o **1** in base al risultato del confronto.
        
 ### parameter_learning.py
 
