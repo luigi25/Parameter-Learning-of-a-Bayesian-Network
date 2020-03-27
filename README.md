@@ -48,7 +48,7 @@ Necessaria l'installazione di alcuni packages nell'ambiente di sviluppo:
        
 ### parameter_learning.py
 
-* La funzione learning prende in ingresso i nodi del grafo, il data set e le righe n di quest'ultimo al fine di apprendere i parametri da stimare. Vengono fatte una serie di assunzioni descritte nell'articolo linkato e nella relazione del progetto, utilizzando per il calcolo dei paramentri come prior pseudo-counts unitari (Laplace Smoothing). La funzione restituisce qn, il vettore contenente la distribuzione appresa su un data set di dimensione n.
+* La funzione learning prende in ingresso i nodi del grafo, il data set e le righe n di quest'ultimo al fine di apprendere i parametri da stimare. In principio, vengono fatte una serie di assunzioni descritte nell'articolo presente nella sezione "Useful links" e nella relazione del progetto e, successivamente, sono stati calcolati gli Nij/Nijk. In seguito, viene eseguito il calcolo dei paramentri usando come prior pseudo-counts unitari, ovvero, aijk=1 e aij=2 (Laplace Smoothing). La funzione restituisce qn, il vettore contenente la distribuzione appresa su un data set di dimensione n.
         
 ### jensen_shannon.py
         
