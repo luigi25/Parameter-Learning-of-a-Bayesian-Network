@@ -30,25 +30,28 @@ def learning(nodes, dataset, n):
                 for n in range(n):
                     # per ogni genitore p
                     for p in range(len(parents)):
-                        # per ogni possibile configurazione del nodo i-esimo
+                        # per ogni possibile k-esima configurazione del nodo i
                         for k in range(ri):
                             # per ogni nodo controlla se la configurazione j-esima dei genitori è presente nel dataset
                             if dataset[n][parents[p]] == config[j][p] and event is False:
                                 event = True
+                                # se ho solo un genitore
                                 if len(parents) == 1:
                                     # controlla se è uguale alla configurazione k-esima del nodo
                                     if int(dataset[n][i]) == k:
+                                        # memorizzo ogni configurazione k-esima del nodo
                                         counter_ijk[int(dataset[n][i])] += 1
                                     event = False
                             # per ogni nodo controlla se la configurazione j-esima dei genitori è presente nel dataset
                             elif dataset[n][parents[p]] == config[j][p] and event is True:
                                 # controlla se è uguale alla configurazione k-esima del nodo
                                 if int(dataset[n][i]) == k:
+                                    # memorizzo ogni configurazione k-esima del nodo
                                     counter_ijk[int(dataset[n][i])] += 1
                                     event = False
                             else:
                                 break
-                # memorizzo per ogni configurazione j-esima
+                # memorizzo per ogni configurazione j-esima dei genitori
                 nijk.append(counter_ijk)
                 nij.append(sum(counter_ijk))
         # se il nodo i-esimo non ha i genitori
@@ -58,12 +61,14 @@ def learning(nodes, dataset, n):
                 for k in range(ri):
                     # controlla se è uguale alla configurazione k-esima del nodo
                     if int(dataset[n][i]) == k:
+                        # memorizzo ogni configurazione k-esima del nodo
                         counter_ijk[int(dataset[n][i])] += 1
             nijk.append(counter_ijk)
             nij.append(sum(counter_ijk))
-        # e per ogni nodo i
+        # memorizzo per ogni nodo i-esimo
         Nijk.append(nijk)
         Nij.append(nij)
+        
     # nodo i-esimo
     for i in range(len(nodes)):
         parents = nodes[i].pi
@@ -77,6 +82,7 @@ def learning(nodes, dataset, n):
         # se il nodo non ha i genitori
         else:
             j = 0
+            # k-esima configurazione del nodo i
             for k in range(ri):
                 qn.append((aijk + Nijk[i][j][k]) / (aij + Nij[i][j]))
     return qn
