@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Il programma tratta di un semplice modello di rete Bayesiana inerente al problema di un **cancro metastatico**. Si generano una serie di data sets, di dimensione **n** crescente, a partire dalla rete Bayesiana considerata e dalle probabilità condizionate dei vari nodi che costituiscono la rete stessa. Successivamente, da questa generazione del data set, si ricavano i parametri da apprendere **qn** e si confrontano con le probabilità iniziali **p**, che sono state fornite precedentemente, attraverso la divergenza di **Jensen-Shannon**. Infine, i risultati vengono visualizzati su un grafico per la visione della **learning curve**, verificando che la divergenza si riduce progressivamente al crescere di **n**.
+Il programma tratta di un semplice modello di rete Bayesiana inerente al problema di un **cancro metastatico**. Si generano una serie di data sets, di dimensione **n** crescente, a partire dalla rete Bayesiana considerata e dalle probabilità condizionate dei vari nodi che costituiscono la rete stessa. Successivamente, da questa generazione del data set, si ricavano i parametri da apprendere **qn** e si confrontano con le probabilità iniziali **p**, che sono state fornite precedentemente, attraverso la divergenza di **Jensen-Shannon**. Infine, i risultati vengono visualizzati su un grafico per la visione della **learning curve**, verificando che la divergenza si riduca progressivamente al crescere di **n**.
 
 
 ## Useful links
